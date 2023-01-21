@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var letterCounter = 0
-    
+
     @State private var name = ""
     @EnvironmentObject private var userManager: UserManager
     
@@ -18,13 +17,10 @@ struct RegisterView: View {
             HStack {
                 TextField("Enter your name...", text: $name)
                     .multilineTextAlignment(.center)
-                    .onChange(of: name) { _ in
-                        letterCounter = name.count
-                    }
                 
-                Text(letterCounter.formatted())
+                Text(name.count.formatted())
                     .padding(.trailing)
-                    .foregroundColor(letterCounter > 2 ? .green: .red)
+                    .foregroundColor(name.count > 2 ? .green: .red)
             }
             
             Button(action: registerUser) {
@@ -33,18 +29,17 @@ struct RegisterView: View {
                     Text("Ok")
                 }
             }
-            .disabled(letterCounter < 3)
+            .disabled(name.count < 3)
         }
     }
     
     private func registerUser() {
-        @AppStorage("username") var username = ""
         
         if !name.isEmpty {
             userManager.name = name
             userManager.isRegistered.toggle()
 
-            username = name
+            DataManager.shared.username = name
         }
     }
 }

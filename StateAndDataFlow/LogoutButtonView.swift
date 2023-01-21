@@ -12,7 +12,7 @@ struct LogoutButtonView: View {
     @EnvironmentObject private var userManager: UserManager
     
     var body: some View {
-        Button(action: LogoutUser) {
+        Button(action: logoutUser) {
             Text("Logout")
                 .font(.title)
                 .fontWeight(.bold)
@@ -30,10 +30,8 @@ struct LogoutButtonView: View {
 
 extension LogoutButtonView {
     
-    private func LogoutUser() {
-        @AppStorage("username") var username = ""
-        
-        username = ""
+    private func logoutUser() {
+        DataManager.shared.username = ""
         
         userManager.name = ""
         userManager.isRegistered.toggle()

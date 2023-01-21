@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		441EB1222976A41700457DB5 /* LogoutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EB1212976A41700457DB5 /* LogoutButtonView.swift */; };
+		448D80DB297A75EB0020F904 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D80DA297A75EB0020F904 /* DataManager.swift */; };
 		5150E48E2975C415005B954D /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5150E48D2975C415005B954D /* StateAndDataFlowApp.swift */; };
 		5150E4902975C415005B954D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5150E48F2975C415005B954D /* ContentView.swift */; };
 		5150E4922975C417005B954D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5150E4912975C417005B954D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		441EB1212976A41700457DB5 /* LogoutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButtonView.swift; sourceTree = "<group>"; };
+		448D80DA297A75EB0020F904 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5150E48A2975C415005B954D /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5150E48D2975C415005B954D /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
 		5150E48F2975C415005B954D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				5150E49D2975CCE3005B954D /* RegisterView.swift */,
 				5150E4A12975CF30005B954D /* StarterView.swift */,
 				5150E49F2975CD9F005B954D /* UserManager.swift */,
+				448D80DA297A75EB0020F904 /* DataManager.swift */,
 				5150E49B2975C7B1005B954D /* TimeCounter.swift */,
 				5150E4912975C417005B954D /* Assets.xcassets */,
 				5150E4932975C418005B954D /* Preview Content */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5150E49C2975C7B1005B954D /* TimeCounter.swift in Sources */,
+				448D80DB297A75EB0020F904 /* DataManager.swift in Sources */,
 				5150E49E2975CCE3005B954D /* RegisterView.swift in Sources */,
 				441EB1222976A41700457DB5 /* LogoutButtonView.swift in Sources */,
 				5150E4A22975CF30005B954D /* StarterView.swift in Sources */,
